@@ -1,0 +1,18 @@
+JRE vs JDK 
+--------------
+JRE & JDK are used for run and create java application . 
+
+JRE (Java Runtime Enviornment)
+-----------------------------------------
+- Require to run Java Apps.
+- End-Users normally require only the JRE.
+
+JDK (Java Development Kit)
+-----------------------------------
+- Provides tools required to create java apps.
+- Developers normally require the JDK .
+- And in order to develop apps you need to run them so , JDK installation includes a JRE . 
+
+Creating and Running Java Application 
+--------------------------------------------------
+Java Source File  -->   JDK Tools  -->  Java Application  -->  JRE
