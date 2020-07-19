@@ -1,6 +1,6 @@
 Variables
 --------------
-A variable is basically a Named Data Storage . A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+A variable is basically a Named Data Storage . A variable is a container which holds the value while the Java program is executed. Variables are strongly typed in java . A variable is assigned with a data type.
 
 Primitive Data Types
 ---------------------------
