@@ -1,0 +1,23 @@
+Variables
+--------------
+A variable is basically a Named Data Storage . A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.
+
+Primitive Data Types
+---------------------------
+- Primitive Data types are the Foundation of all other types . Primitive Types are the most basic data types available within the Java language.
+- There four Categories of primitive types
+               1. Integer
+                    - byte
+                    - sort
+                    - int
+                    - long
+               2. Floating point
+                    - float
+                    - double
+               3. Character
+                    - char
+               4. Boolean
+                    - boolean
+
+Primitive Types are stored By-value .
+
