@@ -6,7 +6,13 @@ Inheritance
       - Can be assigned to base class typed references.
       - Methods override base class methods with same signature .
 
-Method Overriding:
+Method Overriding :
 --------------------------
 - If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java. In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
 - The methods must have the same name , same number of parameters and same type of parameters in it .
+
+Super keyword :
+---------------------
+Super is an implicit reference to the current object 
+    - super treats the object as if it is an instance of its base class .
+    - useful  for accessing base class members that have been overriden .
