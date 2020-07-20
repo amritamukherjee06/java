@@ -1,6 +1,6 @@
 Encapsulation and Access Modifiers
 -----------------------------------------------
-The internal representation of an object is generally hidden . This concept is known as encapsulation and to achieve Encapsulation we use Access Modifiers .
+In most cases , data should not be directly accessible outside of the class . This concept of hiding implementation is known as encapsulation and to achieve Encapsulation we use Access Modifiers .
 
 Access Modifiers
 ----------------------
