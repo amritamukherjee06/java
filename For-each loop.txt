@@ -1,0 +1,17 @@
+For - each Loop
+--------------------
+Executes a statement once for each member in an array 
+    - Handles getting collection length
+    - Handles accessing each value
+
+Syntax: 
+---------
+              for ( loop-variable -declaration : array )
+                                statement;
+
+Ex:
+-----
+	float[] theVals = {10.0f, 20.0f, 15.0f };
+	float sum = 0.0f;
+	for(float currentVal : theVals)
+	sum += currentVal;
