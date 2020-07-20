@@ -1,0 +1,8 @@
+StringBuilder
+-----------------
+-String is immutable that means any modification to a string results in the creation of a new string , and there are times when we need to efficiently manipulate strings and that's why we use StringBuilder . 
+- StringBuilder provides mutable string buffer . 
+    - For best performance pre-size buffer 
+            - Will grow automatically if needed
+     - Most common methods : append and insert 
+     - Use toString to extract resulting string
