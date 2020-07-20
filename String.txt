@@ -1,0 +1,16 @@
+String
+--------
+The String class stores a sequence of Unicode characters .
+     - Literals are enclosed in double quotes (" ")
+     - Values can be concatenated using + and +=
+     - String objects are immutable
+
+String Class Methods
+--------------------------
+1. length - to get the string length
+2. valueOf - String for non-string
+3. concat , replace , toLowerCase , toUpperCase , trim , split - Create new string from the existing string .
+4. format - Formatting
+5. charAt , substring - Extract substring  
+6. ontains , endsWith , startsWith , indexOf , lastIndexOf - Testsubstring
+7.compareTo , compareToIgnoreCase , isEmpty , equals , equalsIgnoreCase - Comparison
