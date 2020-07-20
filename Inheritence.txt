@@ -1,0 +1,7 @@
+Inheritance
+---------------
+- A class can be declared to inherit (a.k.a derive) from another class by using the "extends" keywords .
+- Derived class has characteristics of base class and can add specialization on its own .
+      - Fields hide base class fields with same name .
+      - Can be assigned to base class typed references.
+      - Methods override base class methods with same signature .
