@@ -1,0 +1,33 @@
+Looping
+-----------
+
+1.While loop
+----------------
+ Syntax:
+                  while(condition)
+                     statement;
+
+-Repeatedly executes a statement as long as the condition is true
+-Condition checked at loop start
+- Statement may never execute
+
+2.Do-while loop
+--------------------
+ Syntax:
+                          do
+                        statement;
+                      while(condition)
+
+-Repeatedly executes a statement as long as the condition is true
+-Condition checked at loop end
+-Statement always executes at least once
+
+3.For loop
+-------------
+ Syntax:
+                        for(initialize;condition;update)
+                                      statement;
+
+-Repeatedly executes a statement as long as the condition is true
+-Condition checked at loop start
+-Provides simplified notation for loop control values
