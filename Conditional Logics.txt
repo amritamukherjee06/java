@@ -1,0 +1,8 @@
+Conditional Logic
+----------------------
+Adding Conditional logic in our code means the program will work differently based on differences in data values .
+ 
+1. Relational Operators(Used to test different values)
+2. Conditional Assignments(Used to assign value differently based on conditions)
+3. The if statement( allows to change the code path in the application)
+4. Logical operators(uses to combine different conditions together)
