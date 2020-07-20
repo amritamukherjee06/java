@@ -1,0 +1,10 @@
+Overloading
+----------------
+A class may have multiple versions of its constructor methods or constructors which is known as overloading.
+
+Each constructor and method must have a unique signature 
+    - Name
+    - Number of parameters
+    - Types of each parameter 
+
+In overloading the constructor and method must have same name but the other signatures must be different .
