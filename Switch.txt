@@ -9,17 +9,21 @@ Transfer control to a statement based on a value
 
 Syntax:
 ----------
-                  switch(test-value) {
-                       case value-1:
-                         statements
-   	        case value-2:
-        	          statements
+             switch(test-value) {
+             case value-1:
+               statements;
+                 break;
+   	         case value-2:
+        	    statements;
+                break;
    	         .
    	         .
    	         .
      	        case value-n:
-         	          statements
+         	      statements;
+                  break;
      	        default:
-
+                 break;
      	         }
+
 
