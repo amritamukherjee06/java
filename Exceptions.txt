@@ -1,0 +1,29 @@
+Exception
+-------------
+Exceptions provide a non-intrusive way to signal error
+  -try/catch/finally provides a structured way to handle exceptions 
+
+Try Block
+------------
+- Contains normal code to execute
+- Block executes to completion unless an exception is thrown . 
+
+Catch Block
+---------------
+- Contains the error handling code
+- Block executes only if matching exception is thrown .
+
+Finally Block 
+-----------------
+- Contains cleanup code if needed
+- Runs in all cases following try or catch block
+
+Checked Exceptions
+-------------------------
+- we have to handle it . if the the compiler raises an error
+- any class that inherits from Exception but not from RuntimeException are considered as checked Exception
+
+Unchecked Exceptions
+----------------------------
+- we can handle it but if we don't the compiler won't raise any error .
+- any exception class that inherits from RuntimeException is considered as Unchecked Exception .
