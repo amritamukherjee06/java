@@ -1,0 +1,10 @@
+Classes in Java
+-------------------
+- Classes provide a structure for describing and creating objects
+- A class is a template for creating an object
+    - Declared with the class keyword followed by the class
+    - Java Source file name normally same as the class
+- A class made up of both state and executable code (Fields & Methods)
+- We use the new keyword to create a a class instance.
+   - Allocates the memory described by the class
+   - Returns reference to allocated memory
