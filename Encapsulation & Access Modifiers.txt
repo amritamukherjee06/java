@@ -1,0 +1,14 @@
+Encapsulation and Access Modifiers
+-----------------------------------------------
+The internal representation of an object is generally hidden . This concept is known as encapsulation and to achieve Encapsulation we use Access Modifiers .
+
+Access Modifiers
+----------------------
+1. public 
+    - Visibility : Everywhere 
+2. private
+    - Visibility : Only within its own class
+3. default
+    - Visibility : Only within the package. 
+4. protected
+    - Visibility : Within the package and outside the package through child class. 
