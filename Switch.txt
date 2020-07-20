@@ -1,0 +1,25 @@
+Switch
+---------
+Transfer control to a statement based on a value
+- Simplifies testing against multiple possible matches
+- Only primitive types supported are char and integers
+- A match can execute more than one statement
+- Use break to avoid "falling through "
+- Can optionally include default to handle any unmatched values
+
+Syntax:
+----------
+                  switch(test-value) {
+                       case value-1:
+                         statements
+   	        case value-2:
+        	          statements
+   	         .
+   	         .
+   	         .
+     	        case value-n:
+         	          statements
+     	        default:
+
+     	         }
+
