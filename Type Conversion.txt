@@ -1,0 +1,26 @@
+Type Conversion
+----------------------
+Operations in our applications deals with multiple data types that is why we need type conversion .
+ 
+1. Implicit type conversion
+----------------------------------
+- Conversions performed automatically by the compiler 
+- Widening conversions are automatic
+- By Operating with Mixed Integer Sizes it uses the largest integer in equation.
+- By Operating with Mixed Floating point sizes it uses double
+- By Operating with Mixed integer and floating point it uses largest floating point in equation . 
+
+Ex: int iVal = 50;
+      long lVal = iVal;
+
+2.Explicit type conversion
+---------------------------------
+- Conversions performed explicitly in code with cast operator 
+- Can perform widening and narrowing
+- Floating point to integer drops fraction
+- Use caution with narrowing conversions
+- Integer to floating point can lose precision .
+
+Ex: long lVal = 50;
+      int ival = (int) lVal;
+
