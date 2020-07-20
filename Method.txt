@@ -1,0 +1,11 @@
+Method
+----------
+Executable code that manipulates state and performs operations
+         - Methods have return type
+         - Methods can have parameters
+
+Syntax :
+----------
+             return-type name (typed-parameter-list){
+              statements;
+             }

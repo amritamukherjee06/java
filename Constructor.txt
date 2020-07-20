@@ -1,0 +1,12 @@
+Constructor
+--------------
+Executable code used during object creation to set the initial state
+   - Have no return type
+   - Every class has at least one constructor
+   - A class can have multiple constructors
+
+Constructor Chaining
+--------------------------
+One Constructor can call another constructor
+     - Use this keyword followed by parameter list
+     - Must be the first line
