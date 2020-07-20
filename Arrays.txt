@@ -1,0 +1,14 @@
+Arrays
+--------
+
+Syntax:
+---------
+             datatype[] nameofArray = new datatype[number of elements] ;
+             datatype[] nameofArray = {element1,element2,elemen3...};
+
+-Arrays provides an ordered collection of elements . Arrays allows us to store multiple values of a common type under a single name . 
+     - Each elements accessed via an index
+     - Indexes range from 0 to number-of-elements minus 1
+     - Number of elements can be found via array's length value .
+      
+
