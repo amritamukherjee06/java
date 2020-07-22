@@ -1,0 +1,13 @@
+Java I/O
+-----------
+ Reading and writing information . 
+Organized on four base classes
+1. Reader and Writer
+      - Reader is the base class that allows the application to read characters from a file
+      - Writer is the base class that allows the application to write characters to a file
+2. InputStream and OutputStream 
+       - InputStream can read raw bytes from a binary file 
+       -  OutputStream can write raw bytes to a binary file 
+3. File  
+4. Path
+File and Path are models of a file or directory on the disk.
