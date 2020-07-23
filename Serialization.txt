@@ -1,0 +1,51 @@
+Serialization 
+----------------
+Serialization is general mechanism and it is about creating a portable representation of an object . This representation can be stored on a disk for later use but it can also be sent over a network to another application that need the subject . 
+
+Example
+-----------
+public class Person {
+    
+      private String name ;
+      private int age;
+      // some methods
+}
+
+This is a java person class so only java code can use it . But we need to transmit this person to another application . For that we use an XML application . This is an instance of Person , in XML and it is portable from one application to another .
+
+<person>
+        <name>Sarah</name>
+         <age>32</age>
+</person>
+
+This is a JSON instance , also portable 
+{
+     "Person":   {
+           "name" :  "Sarah",
+           "age" :  32
+       }
+}
+
+So, XML and JSON are two ways of serializing java objects in a portable way 
+
+Making A class Serializable
+------------------------------------
+
+- Only instances of Serializable classes can be serialized
+- The only thing to do for the class to be serializable is to implement the Serializable interface and 
+- Serializable interface has no methods
+- It is optional to create the special static field to a Serializable class called serialVersionUID . It is the version or the ID of the class . If it is not created it will be computed by java Virtual Machine in case it needs it .
+
+The person class now is serializable by implementing serializable and now the instances of this class can be passed from one application to another . Either across a network or through a disk .
+
+public class Person implements Serializable {
+    
+      private String name ;
+      private int age;
+      // some methods
+}
+
+Deserialization
+---------------------
+The reverse operation of serialization is called deserialization. It flexible enough to deserialize objects in almost the same class , i.e. the class should have the same name and the same serial UID but does not have necessarily to be exactly the same . An we would say in a controlled way i.e. in a predictable way .
+
