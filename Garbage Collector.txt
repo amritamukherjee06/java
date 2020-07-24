@@ -1,0 +1,29 @@
+Garbage Collector
+-----------------------
+In Java we can allocate an object , we can use it and when the object is no longer being referenced , the garbage collector will release the memory used by that object and resolves the issue of memory leak . As long as there is a reference to an object the Garbage Collector can't free up the memory , we can use the object . 
+
+Forms of Garbage Collection
+------------------------------------
+- Do Nothing 
+-----------------
+      - never runs , no memory gets freed but we do have the guarantee of not collecting live objects .
+
+- Reference Counting
+---------------------------
+       - each object has a count of the number of references to it. Garbage is identified by having a reference count of zero. An object's reference count is incremented when a reference to it is created, and decremented when a reference is destroyed.
+
+- Mark and Sweep
+-----------------------
+        - The Mark phase walks through all live memory marking that memory as still being alive and the sweep phase removes removes all unused memory.
+
+- Copying
+-------------
+        - It works more like a Mark & Sweep GC but after sweep phase , all the memory that's left is copied from one buffer to another . and at the same time, once the memory is being copied , we'll rearrange it so it is no longer fragmented . 
+
+- Generational
+--------------------
+         - Once an object survives a garbage collection it gets promoted to different generation . The collector will sweep through the young generation more often than it sweeps through the older generations . 
+
+- Incremental
+
+
