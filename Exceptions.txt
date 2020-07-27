@@ -1,6 +1,6 @@
 Exception
 -------------
-Exceptions provide a non-intrusive way to signal error
+Exception is a typical or exceptional condition that signals a piece of code could not execute normally . Exceptions provide a non-intrusive way to signal error
   -try/catch/finally provides a structured way to handle exceptions 
 
 Try Block
