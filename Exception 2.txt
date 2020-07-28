@@ -1,0 +1,35 @@
+Exception
+-------------
+1. An exception can be caught only once.
+2. Subclass must be caught before their super class
+3. Do not catch checked exceptions that could not be thrown . 
+
+Multi - Catch Block
+------------------------
+Java 7 introduced Multi - Catch Block 
+
+1. Exceptions are separated by a a pipe and there's only one reference
+2. Use exceptions not related through inheritance . Otherwise we have to catch the super class only .
+3. The variable that references exception must be treated as final . we cant reassign it . 
+
+
+Finally Block 
+----------------
+When we want to execute a piece of code whether or not an exception in thrown inside a try-block . To perform some cleanup , recover memory or close a resource . In this cases we use the finally block . 
+
+- Finally is always executed
+- An exception thrown in the finally block will hide the exceptions thrown in the try and catch blocks .
+- The value returned from the finally block will be the returned value of the method .
+
+ ** Catch and finally blocks are optional . 
+
+Throws Clause
+-------------------
+Sometimes we cannot handle exception in the same method that it is thrown . So we have to propagate it through the call stack . When working with checked exceptions in order to do it we have to use the throws keyword . Throws is the part of method deceleration .
+
+ - The exceptions declared in the throws list must be handled by the caller of the method or declare them in turn , the caller's throws list . And so on the dealer class can handle the exception or the program terminates .
+- There is no compilation error , if we specify an exception after a super class in the throws list or in any position . 
+- When we override a method you can throw only the checked exceptions that have been specified in the method of the super class or interface.
+
+
+** Throw is for throwing exceptions and Throws on the other hand is for specifying which exceptions a method can throw so the caller or client of that method can handle them . 
