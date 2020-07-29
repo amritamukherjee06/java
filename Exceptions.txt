@@ -21,9 +21,11 @@ Finally Block
 Checked Exceptions
 -------------------------
 - we have to handle it . if the the compiler raises an error
+-  if a method is throwing a checked exception then it should handle the exception using try-catch block or it should declare the exception using throws keyword .
 - any class that inherits from Exception but not from RuntimeException are considered as checked Exception
 
 Unchecked Exceptions
 ----------------------------
 - we can handle it but if we don't the compiler won't raise any error .
+- Most of the times these exception occurs due to the bad data provided by user during the user-program interaction. 
 - any exception class that inherits from RuntimeException is considered as Unchecked Exception .
