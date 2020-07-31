@@ -1,0 +1,391 @@
+1.Ex:
+What will the following code print?
+public class Test
+{
+	public int luckyNumber(int seed)
+	{
+		if(seed > 10) return seed%10;
+		int x = 0;
+		try
+		{
+			if(seed%2 == 0) throw new Exception("No Even no.");
+			else return x;
+		}
+		catch(Exception e)
+		{
+			return 3;
+		}
+		finally
+		{
+			return 7;
+		}
+	}
+	public static void main(String args[])
+	{
+		int amount = 100, seed = 6;
+		switch( new Test().luckyNumber(6) )
+		{
+			case 3: amount = amount * 2;
+			case 7: amount = amount * 2;
+			case 6: amount = amount + amount;
+ 			default :
+		}
+		System.out.println(amount);
+	}
+}
+Select the correct option
+Answer = It will print  400
+
+
+2.Ex:
+Identify the correct constructs.
+Select 1 Option
+**A.**
+try {
+  for( ;; );
+}finally { }
+
+B.
+try {
+  File f = new File("c:\a.txt");
+} catch {  f = null; }
+
+C.
+int k = o
+try {
+  k = callValidMethod();
+} 
+System.out.println(k);
+catch {  k = -1; }
+
+D.
+try {
+  try {
+     Socket s = new ServerSocket(3030);
+  }catch(Exception e) { 
+    s = new ServerSocket(4040);
+  } 
+}
+
+E.
+try {
+       s = new ServerSocket(3030); 
+} catch(Exception t){ t.printStackTrace(); }
+} catch(IOException e) {
+    s = new ServerSocket(4040);
+} catch(Throwable t){ t.printStackTrace(); }
+
+F.
+int x = validMethod();
+try {
+  if(x == 5) throw new IOException();
+  else if(x == 6) throw new Exception();
+}finally {
+ x = 8;
+}
+catch(Exception e){ x = 9; }
+
+3.Ex:
+class A 
+{
+    public void doA(int k) throws Exception { // 0
+        for(int i=0; i< 10; i++) {
+            if(i == k) throw new Exception("Index of k is "+i); // 1
+        }
+    }
+    public void doB(boolean f) { //2
+        if(f) {
+            doA(15); //3
+        }
+        else return;
+    }
+    public static void main(String[] args) { //4
+        A a = new A();
+        a.doB(args.length>0); //5
+    }
+}
+
+Which of the following statements are correct? 
+Answer :	This will compile if 'throws Exception' is added at line //2 as well as //4
+
+4.Ex.
+What is the result of compiling and running this code?
+class MyException extends Throwable{}
+class MyException1 extends MyException{}
+class MyException2 extends MyException{}
+class MyException3 extends MyException2{}
+public class ExceptionTest
+{
+	void myMethod() throws MyException
+	{
+		throw new MyException3();
+	}
+	public static void main(String[] args)
+	{
+		ExceptionTest et = new ExceptionTest();
+		try
+		{
+			et.myMethod();
+		}
+		catch(MyException me)
+		{
+			System.out.println("MyException thrown");
+		}
+		catch(MyException3 me3)
+		{
+			System.out.println("MyException3 thrown");
+		}
+		finally
+		{
+			System.out.println(" Done");
+		}
+	}
+}
+
+Answer =	It fails to compile
+
++++5.Ex.
+Consider the following hierarchy of Exception classes :
+
+	java.lang.RuntimeException
+                                  +-------- IndexOutOfBoundsException
+	                         +---------ArrayIndexOutOfBoundsException
+
+Which of the following statements are correct for a method that can throw ArrayIndexOutOfBounds as well as StringIndexOutOfBounds Exceptions but does not have try catch blocks to catch the same?
+       Please select 3 options
+A.	The method calling this method will either have to catch these 2 exceptions or declare them in it's throws clause.
+B.	It is ok if it declares just 'throws ArrayIndexOutOfBoundsException'
+C.	It must declare 'throws ArrayIndexOutOfBoundsException, StringIndexOutOfBoundsException'
+D.	It is ok if it declares just 'throws IndexOutOfBoundsException'
+E.	It does not need to declare any throws clause.
+
+6.Ex.
+Consider the following code snippet:
+
+void m1() throws Exception
+{
+   try
+   {
+      // line1
+   }
+   catch (IOException e)
+   {
+       throw new SQLException();
+   }
+   catch(SQLException e)
+   {
+       throw new InstantiationException();
+   }
+   finally
+   {
+      throw new CloneNotSupportedException()   // this is not a RuntimeException.
+   }
+}
+
+Which of the following statements are true?
+
+Answer =
+1 .If IOException gets thrown at line1, then the whole method will end up throwing CloneNotSupportedException.
+2. If no exception is thrown at line1, then the whole method will end up throwing CloneNotSupportedException.
+
+7.Ex:
+Q7: What will following code print when run.?
+
+public class Test
+{
+ static String s = "";
+ public static void m0(int a, int b)
+ {
+   s +=a;
+   m2();
+   m1(b);
+ }
+ public static void m1(int i)
+ {
+   s += i;
+ }
+ public static void m2()
+ {
+  throw new NullPointerException("aa");
+ }
+ public static void m()
+ {
+   m0(1, 2);
+   m1(3);
+ }
+ public static void main(String args[])
+ {
+   try
+   {
+    m();
+   }
+   catch(Exception e){ }
+   System.out.println(s);
+ }
+}
+
+Answer =	1
+
+8.Ex:
+Assume that a method named 'method1' contains code which may raise a non-runtime (checked) Exception.
+What is the correct way to declare that method so that it indicates that it expects the caller to handle that exception?
+Answer = 
+1.public void method1() throws Throwable
+2.public void method1() throws Exception
+
+9.Ex:
+Q9 : What will following code print when run.?
+public class TestClass
+{
+   public static void main(String args[])
+   {
+      try{
+         m1();
+      }catch(IndexOutOfBoundsException e){
+         System.out.println("1");
+         throw new NullPointerException();
+      }catch(NullPointerException e){
+         System.out.println("2");
+         return;
+      }catch (Exception e) {
+         System.out.println("3");
+      }finally{
+         System.out.println("4");
+      }
+      System.out.println("END");
+   }
+   // IndexOutOfBoundsException is a subclass of RuntimeException.
+   static void m1()
+   {
+      System.out.println("m1 Starts");
+      throw new IndexOutOfBoundsException( "Big Bang " );
+   }
+}
+
+Answer =
+1.The program will print 'm1 Starts'.
+2.The program will print 'm1 Starts', 1 and 4, in that order.
+3.'END' will not be printed.
+
+10.Ex
+What will happen when the following program is compiled and run?
+public class SM
+{
+    public String checkIt(String s)
+    {
+	if(s.length() == 0 || s == null)
+	{
+	    return "EMPTY";
+	}
+	else return "NOT EMPTY";
+    }
+    
+    public static void main(String[] args)
+    {
+	SM a = new SM();
+	a.checkIt(null);
+    }
+   
+}
+Answer = It will throw NullPointerException.
+
+11.Ex
+public class FinallyTest
+{
+   public static void main(String args[])
+   {
+      try
+      {
+          if (args.length == 0) return;
+          else throw new Exception("Some Exception");
+      }
+      catch(Exception e)
+      {
+          System.out.println("Exception in Main");
+      }
+      finally
+      {
+          System.out.println("The end");
+      }
+   }
+}
+Please select 2 correct options.
+Answer =
+1.If run with no arguments, the program will only print 'The end'.
+2.If run with one argument, the program will print 'Exception in Main' and 'The end'.
+
+12.Ex:
+class E1 extends Exception{ }
+class E2 extends E1 { }
+class Test
+{
+	public static void main(String[] args)
+	{
+		try{
+			throw new E2();
+		}
+		catch(E1 e){
+			System.out.println("E1");
+		}
+		catch(Exception e){
+			System.out.println("E");
+		}
+		finally{
+			System.out.println("Finally");
+		}
+	}
+}
+Answer = It will print E1 and Finally.
+
+13.Ex:
+Which of these statements are true?
+Answer = 
+1.The main method of a program can declare that it throws checked exceptions.
+2.A method declaring that it throws a certain exception class may throw instances of any subclass of that exception class.
+
+++14.Ex:
+
+// Filename: Test.java
+public class Test
+{
+   public static void main(String args[])
+   {
+      for(int i = 0; i< args.length; i++)
+      {
+         System.out.print("  "+args[i]);
+      }
+   }
+}
+Now consider the following 3 options for running the program:
+a: java Test
+b: java Test param1
+c: java Test param1 param2
+Which of the following statements are true?
+Please select 2 options
+A.	The program will throw java.lang.ArrayIndexOutofBoundsException on option a.
+B.	The program will throw java.lang.NullPointerException on option a.
+C.	The program will print 'Test param1' on option b.
+D.	It will print 'param1 param2' on option c.
+E.	It will not print anything on option a.
+
+15.Ex:
+Q15
+What letters, and in what order, will be printed when the following program is compiled and run?
+public class FinallyTest
+{
+   public static void main(String args[]) throws Exception
+   {
+       try
+       {
+          m1();
+          System.out.println("A");
+       }
+       finally
+       {
+          System.out.println("B");
+       }
+       System.out.println("C");
+   }
+   public static void m1() throws Exception { throw new Exception(); }
+}
+Answer =	It will print B and throw Exception.
