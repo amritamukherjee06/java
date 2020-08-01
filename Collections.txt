@@ -1,11 +1,12 @@
 Collection interface extends iterable interface . 
 
 Flow Chart
----------------                             Y                                        Y
+---------------      
+                                 Y                            Y
            Elements are Keyed?  ---->   Order is Important  ----->  Sorted Map                           
-                              |N                                   |N
-                Elements are Unique                  Map
-                  |Y                      |N                       Y
-Order is Important        First In, First Out?  ------>Queue
-       |Y               |N           | Y       Y        |N                      N
- SortedSet         Set      Deque <------ Last In,First Out? ------>List
+                |N                                   |N
+         Elements are Unique                        Map
+         |Y              |N                    Y
+Order is Important    First In, First Out?  ------> Queue
+    |Y       |N         | Y     Y      |N                N
+ SortedSet   Set      Deque <------ Last In,First Out? ------> List
