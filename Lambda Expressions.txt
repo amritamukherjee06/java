@@ -1,0 +1,34 @@
+Lambda Expression
+-------------------------
+To make instance of anonymous classes easier to write and read .
+
+Eg:
+
+Anonymous Class
+----------------------
+
+FileFilter fileFilter = new FileFilter(){
+
+@Override
+public boolean accept(File file){
+return file.getName().endsWith(".java");
+}
+};
+
+Lambda Expression 
+-------------------------
+
+FileFilter filter = (File file) -> file.getName().endsWith(".java");
+
+Type of a Lambda Expression :-
+--------------------------------------
+Lambda Expression is a Function Interface 
+
+- It is an interface with only one abstract method .
+- Runnable Interface , Comparator , FileFilter Interface are function interface.
+- The methods from the object class are not counted in the count of abstract methods to tell if an interface is functional or not . 
+- A functional interface can be annotated  . It is just for convenience , the compiler can tell me whether the interface is functional or not .
+
+-> A lambda Expression can be put in a variable
+-> Lambda can be taken as a method parameter and can be returned by a method . 
+
