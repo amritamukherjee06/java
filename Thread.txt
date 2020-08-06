@@ -1,0 +1,18 @@
+Multithreading
+---------------------
+Running several threads of computation at the same time in the same process . 
+This threads 
+- share memory and resources , 
+- likely to have lower overheads than processes
+- part of the same program . 
+- cannot exist outside of the process lifetime . 
+- Threads are often seen as lightweight processes .
+
+Concurrency
+-----------------
+When a task is broken down into smaller pieces and run simultaneously.
+
+It is achieved by 
+- Tasks (processes) in multitasking
+- Threads in multithreading
+- Distribution of work across a grid or the cloud
