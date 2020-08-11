@@ -1,0 +1,30 @@
+JDBC
+-------
+JDBC is the Java Database Connectivity Technology . JDBC is an API for the java programming language that defines how a client may access a Database . It provides methods for querying and updating data in database .
+
+JDBC Supports 
+--------------------
+-Two tier Architecture 
+-Three tier Architecture 
+processing models for database
+
+In Two Tier Architecture
+
+JAVA APPLICATION -----DBMS-proprietary protocol(Network)----->DATABASE SERVER
+(JDBC)Client Machine                                                                        Database Server
+
+In Three Tier Architecture
+
+  JAVA APPLICATION ------>Application Server(java) JDBC  --------------------DBMS-proprietary protocol(Network)--------->DATABASE SERVER 
+(GUI)Client Machine         Server machine(Business Logic / Middle Tier)                                                                           (Database Server)
+
+JDBC Architecture 
+-----------------------
+1. JDBC API - Application -to-Jdbc Manager Connection . 
+2. JDBC Driver API - JDBC Manager-to-Driver Connection . 
+
+Java Application ---> JDBC API---->JDBC DRIVER MANAGER -----> JDBC Driver ------> Database     
+
+Driver Manager 
+-------------------
+The basic service for managing a set of JDBC drivers . Used to match the connection request from a java application with the proper database driver using the communication sub-protocol . Class.forName is used to load and register a driver with the driver manager . 
