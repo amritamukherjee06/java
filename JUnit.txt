@@ -1,0 +1,41 @@
+Types Of Tests
+-------------------
+According to the knowledge of the System : 
+1. Black Box Testing - Testing without any knowledge of the internal structure of a component or a system . 
+2. White Box Testing - Testing that is based on the internal structure of a component or a system . 
+
+Unit Testing
+---------------
+Unit tests are test written by the programmers . The classical definition of unit tests is that they test a piece of code by invoking it and checking the correctness of some assumptions . 
+
+- Automated
+- Repeatable
+- Fast
+
+Benefits
+-----------
+- Reduce debugging time
+- Serve as documentation 
+- Help to improve the design
+
+JUnit (2017)
+------------
+JUnit is a simple open source framework to write and run repeatable tests . 
+
+JUnit5 is composed of several different models from three different sub projects
+- JUnit Platform
+- JUnit Jupiter
+- JUnit Vintage
+
+JUnit Platform
+------------------
+Provides an AP to launch tests from either the console , IDEs , or build tools , and also for developing a testing framework that runs  on the platform . 
+
+JUnit Jupiter
+----------------
+Writing tests and extensions . 
+
+JUnit Vintage
+-----------------
+Provides an engine for running JUnit3 and JUnit4-based tests on the platform .
+
