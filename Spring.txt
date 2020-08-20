@@ -1,0 +1,38 @@
+ Spring
+---------
+It is a framework build around reducing the complexities around Enterprise Java Development , and later , also providing  enterprise development without EJBs .
+
+** Spring enabled us to do Enterprise development without using an application server (EJB) .
+** Tomcat is not an application server it is a we server .  
+** Spring increases Testability , Maintainability & Scalability . 
+** Helps to reduce Complexity of code
+** By using spring We can remove configuration code or lookup code, focus on the main business, test the code and also helps us to do Annotation or XML 
+Based Development
+
+Dependency injection (DI) 
+-------------------------
+The Dependency Injection is a design pattern that removes the dependency of the programs. In such case we provide the information from the external source 
+such as XML file.It makes our code loosely coupled and easier for testing .
+
+Spring framework provides two ways to inject dependency
+
+---> By Constructor : In constructor-based injection, the dependencies required for the class are provided as arguments to the constructor .
+We can inject the dependency by constructor. The <constructor-arg> subelement of <bean> is used for constructor injection.
+---> By Setter method :In setter-based injection, we provide the required dependencies as field parameters to the class and the values are set 
+using the setter methods of the properties. We have to annotate the setter method with the @Autowired annotation. We can inject the dependency by setter 
+method also. The <property> subelement of <bean> is used for setter injection.
+
+** Constructor Injection is index based not like setter injection which is name based .
+
+Autowiring
+---------------
+Autowiring feature of spring framework enables you to inject the object dependency implicitly. It internally uses setter or constructor injection.
+
+It can be done by 4 types
+
+1. byType : It allows a property to be autowired if exactly one bean of that property type exists within the container . 
+2. byName : It allows us to create multiple instance of that class in our container in our appicationContext . and allows us to choose specific object 
+based of the name . 
+3. constructor : The constructor mode injects the dependency by calling the constructor of the class. It calls the constructor having large number of 
+parameters.
+4. no : It is the default autowiring mode. It means no autowiring bydefault.
